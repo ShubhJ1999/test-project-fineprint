@@ -18,7 +18,7 @@ Authentication in Placement Portal consists:
 
 **/Admin**
 
-Admin is Placement Portal consists:
+Admin in Placement Portal consists:
 
   1. Dashboard
      - Dashboard is designed to simple and userfriendly.
