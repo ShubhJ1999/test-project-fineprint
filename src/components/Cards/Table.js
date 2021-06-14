@@ -4,6 +4,7 @@ const API_HOST = "http://localhost:3001/batch-table";
 const INVENTORY_API_URL = `${API_HOST}`;
 
 function Table() {
+    console.log("1")
     const [data, setData] = useState([]);
     const fetchInventory = () => {
         fetch(`${INVENTORY_API_URL}`)
@@ -11,7 +12,7 @@ function Table() {
             .then(json => setData(json));
     }
     
-    useEffect(() => {
+    useEffect(() => {console.log("2")
         fetchInventory();
     }, []);
 
