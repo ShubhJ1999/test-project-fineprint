@@ -1,23 +1,39 @@
 import React from "react";
 import {useEffect, useState} from 'react';
 
-const API_HOST = "http://localhost:3001/batch-table";
-const INVENTORY_API_URL = `${API_HOST}`;
+const API_HOST = "http://localhost:3001";
+const STUDENT_API_URLA = `${API_HOST}/batchA-table`;
+const STUDENT_API_URLB = `${API_HOST}/batchB-table`;
+const STUDENT_API_URLC = `${API_HOST}/batchC-table`;
 
 const Tabs = ({ color }) => {
   const [openTab, setOpenTab] = React.useState(1);
-  const [data, setData] = useState([]);
-    const fetchInventory = () => {
-        fetch(`${INVENTORY_API_URL}`)
-            .then(res => res.json())
-            .then(json => setData(json));
-    }
+
+    const Table = (value) => {
+
+      const [data, setData] = useState([]);
+      const fetchStudent = () => {
+        if(value === 1) {
+          fetch(`${STUDENT_API_URLA}`)
+              .then(res => res.json())
+              .then(json => setData(json));
+        }
+        if(value === 2) {
+          fetch(`${STUDENT_API_URLB}`)
+              .then(res => res.json())
+              .then(json => setData(json));
+        }
+        if(value === 3) {
+          fetch(`${STUDENT_API_URLC}`)
+              .then(res => res.json())
+              .then(json => setData(json));
+        }
+      }
     
     useEffect(() => {
-        fetchInventory();
+        fetchStudent();
     }, []);
 
-    const Table = (a) => {
       return (
         <div>
           <div className="flex justify-between">
@@ -27,7 +43,7 @@ const Tabs = ({ color }) => {
           <table className="rounded-t-lg m-5 w-5/6 mx-auto bg-gray-200 text-gray-800" align="center" >
               <thead>
               <tr className="text-left border-b-2 border-gray-300">
-                  <th className="px-4 py-3">Batch</th>
+                  <th className="px-4 py-3">Sr.No</th>
                   <th className="px-4 py-3">Branch</th>
                   <th className="px-4 py-3">Students</th>
                   <th className="px-4 py-3">CVR</th>
@@ -37,7 +53,7 @@ const Tabs = ({ color }) => {
                   {
                       data.map((item) => (
                           <tr className="bg-gray-100 border-b border-gray-200">
-                              <td className="px-4 py-3">{item.id = a}</td>
+                              <td className="px-4 py-3">{item.id}</td>
                               <td className="px-4 py-3">{item.branch}</td>
                               <td className="px-4 py-3">{item.students}</td>
                               <td className="px-4 py-3">{item.cvr}</td>
@@ -119,13 +135,13 @@ const Tabs = ({ color }) => {
             <div className="px-4 py-5 flex-auto">
               <div className="tab-content tab-space">
                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">                
-                  {Table("A")}                
+                  {Table(1)}                
                 </div>
                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
-                  {Table("B")}  
+                  {Table(2)}  
                 </div>
                 <div className={openTab === 3 ? "block" : "hidden"} id="link3">
-                  {Table("C")}  
+                  {Table(3)}  
                 </div>
               </div>
             </div>

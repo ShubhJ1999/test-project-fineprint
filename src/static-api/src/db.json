@@ -1,5 +1,5 @@
 {
-    "batch-table": [
+    "batchA-table": [
       {
         "id": 1,
         "branch": "Computer",
@@ -23,6 +23,58 @@
         "branch": "IT",
         "students": 60,
         "cvr": 29
+      }
+    ],
+    "batchB-table": [
+      {
+        "id": 1,
+        "branch": "Computer",
+        "students": 76,
+        "cvr": 54
+      },
+      {
+        "id": 2,
+        "branch": "Mechanical",
+        "students": 64,
+        "cvr": 43      
+      },
+      {
+        "id": 3,
+        "branch": "Metallurgy",
+        "students": 64,
+        "cvr": 44
+      },
+      {
+        "id": 4,
+        "branch": "IT",
+        "students": 75,
+        "cvr": 29
+      }
+    ],
+    "batchC-table": [
+      {
+        "id": 1,
+        "branch": "Computer",
+        "students": 85,
+        "cvr": 45
+      },
+      {
+        "id": 2,
+        "branch": "Mechanical",
+        "students": 76,
+        "cvr": 34      
+      },
+      {
+        "id": 3,
+        "branch": "Metallurgy",
+        "students": 75,
+        "cvr": 49
+      },
+      {
+        "id": 4,
+        "branch": "IT",
+        "students": 85,
+        "cvr": 33
       }
     ]
 }
