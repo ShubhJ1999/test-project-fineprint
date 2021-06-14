@@ -16,7 +16,7 @@ Authentication in Placement Portal consists:
   2. Register
      - he page remains static yet highly convertable to dynamic settings.
 
-**/Admin
+**/Admin**
 
 Admin is Placement Portal consists:
 
