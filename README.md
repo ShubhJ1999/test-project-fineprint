@@ -28,7 +28,7 @@ Admin is Placement Portal consists:
 
   2. Batches
      - Batches is designed to be informative about the students.
-     - Different Cards for various single data displays. Uses static data initially.
      - Consist three different Tabs for various Batches.
-     - Each Tab fetch similar data from the JSONServer, hence shifting tabs won't show any change.
+     - Different Cards for various single data displays. Uses static data initially.
+     - Each Tab fetch similar data from the JSONServer, yet the data differs with shifting tabs dynamically.
      - Static API is created to fetch local data and dynamically modifiable. 
