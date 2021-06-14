@@ -7,7 +7,13 @@ export default function Login() {
   const [password, setPassword] = useState("");
 
   function validateForm() {
-    return email.length > 0 && password.length > 0;
+    //For Demo, a Static Passwrod is Set and Used
+    const checkEmail = /abc@gmail.com/.test(email);
+    const checkPassword = /1234/.test(password);
+
+    if(checkEmail && checkPassword) {
+      return true
+    }
   }
 
   function handleSubmit(event) {
