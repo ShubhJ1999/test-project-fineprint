@@ -11,10 +11,10 @@ Authentication in Placement Portal consists:
   
   1. Login
      - The page remains static yet highly convertable to dynamic settings.
-     - Login Credencials : abc@gmail.com :: 1234
+     - Login Credentials : abc@gmail.com :: 1234
  
   2. Register
-     - he page remains static yet highly convertable to dynamic settings.
+     - The page remains static yet highly convertable to dynamic settings.
 
 **/Admin**
 
