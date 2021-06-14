@@ -1,0 +1,28 @@
+{
+    "batch-table": [
+      {
+        "id": 1,
+        "branch": "Computer",
+        "students": 70,
+        "cvr": 52
+      },
+      {
+        "id": 2,
+        "branch": "Mechanical",
+        "students": 60,
+        "cvr": 46      
+      },
+      {
+        "id": 3,
+        "branch": "Metallurgy",
+        "students": 80,
+        "cvr": 35
+      },
+      {
+        "id": 4,
+        "branch": "IT",
+        "students": 60,
+        "cvr": 29
+      }
+    ]
+}
