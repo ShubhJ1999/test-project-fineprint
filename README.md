@@ -1,4 +1,5 @@
-***Note*** : To enhance user experience, each InitailTitle have been given a ReferencialName. Example: `Vibrant Academy` is assigned to InstituteName.
+***Note*** : To enhance user experience, each InitailTitle have been given a ReferencialName. 
+Example: `Vibrant Academy` is assigned to InstituteName.
 
 Site : Placement Portal
 Technologies : HTML - CSS - JS - React.Js - React Hooks - API - JSON (For Creating Static API)
